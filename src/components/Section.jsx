@@ -1,7 +1,7 @@
 export default function Section({ id, children, title }) {
 
     return (
-        <section id={id} className="flex flex-col justify-center items-center mt-20">
+        <section id={id} className="flex flex-col justify-center items-center py-16 space-y-12">
             <div>
                 <h2 className="text-2xl">
                     {title}
