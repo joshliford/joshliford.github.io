@@ -10,14 +10,22 @@ export default function Hero() {
           Former emergency department nurse, currently working on a development
           team specializing in AI-assisted development workflows, building
           enterprise applications, and evaluating AI agents/tools to enhance
-          team productivity while completing LaunchCode's Full Stack Software
-          Development bootcamp. Leveraging Spec-Driven Development workflows
-          with
+          team productivity while completing
+          <a
+            href="https://www.launchcode.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-500 ml-1 mr-1"
+          >
+            LaunchCode's
+          </a>
+          Full Stack Software Development bootcamp. Leveraging Spec-Driven
+          Development workflows with
           <a
             href="https://github.com/github/spec-kit"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:underline ml-1 mr-1"
+            className="hover:text-cyan-500 ml-1 mr-1"
           >
             Spec-Kit
           </a>
@@ -36,7 +44,7 @@ export default function Hero() {
             href="https://store.steampowered.com/app/264710/Subnautica/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:underline mr-1"
+            className="hover:text-cyan-500 mr-1"
           >
             Subnautica
           </a>
@@ -45,11 +53,12 @@ export default function Hero() {
             href="https://www.playstation.com/en-us/god-of-war/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:underline ml-1 mr-1"
+            className="hover:text-cyan-500 ml-1 mr-1"
           >
             God of War (2018)
           </a>
-          are some of my personal favorites), I have 3 crazy dogs, I enjoy playing the guitar.
+          are some of my personal favorites), I have 3 crazy dogs, I enjoy
+          playing the guitar.
         </p>
       </div>
     </div>
