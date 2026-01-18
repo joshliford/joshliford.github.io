@@ -43,7 +43,7 @@ export default function Contact() {
               <a
                 href="/resume.pdf"
                 download="Josh_Liford_Resume.pdf"
-                className="hover:underline"
+                className="hover:text-cyan-500"
               >
                 Download My Resume
               </a>
