@@ -13,6 +13,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col gap-4">
+            <div>
             <a
               href="https://github.com/joshliford"
               target="_blank"
@@ -21,6 +22,8 @@ export default function Contact() {
             >
               <i className="devicon-github-original"></i>
             </a>
+            </div>
+            <div>
             <a
               href="https://www.linkedin.com/in/joshua-liford/"
               target="_blank"
@@ -29,9 +32,12 @@ export default function Contact() {
             >
               <i className="devicon-linkedin-plain"></i>
             </a>
+            </div>
+            <div>
             <a href="mailto:josh.liford0412@gmail.com" className="text-3xl">
               <Mail className="h-8 w-8" />
             </a>
+            </div>
             <div className="flex items-center gap-2 mt-10">
               <Download className="h-5 w-5" />
               <a
