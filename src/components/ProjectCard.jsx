@@ -28,7 +28,9 @@ export default function ProjectCard({
           <CardTitle className="text-2xl">{projectTitle}</CardTitle>
           <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
         </a>
-        <CardDescription className="text-black text-md">{shortDescription}</CardDescription>
+        <CardDescription className="text-black text-md">
+          {shortDescription}
+        </CardDescription>
       </CardHeader>
       <div className="flex flex-col gap-2">
         <CardContent>
@@ -41,17 +43,24 @@ export default function ProjectCard({
             )}
             <div className="flex flex-wrap gap-2">
               {techStack.map((tech, index) => (
-                <Badge
-                  key={index}
-                  className="flex items-center gap-2 px-3 py-2"
+                <a
+                  href={tech.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:cursor-pointer"
                 >
-                  {tech.icon ? (
-                    <i className={`${tech.icon}`}></i>
-                  ) : (
-                    <Package /> // empty spacer for no icons
-                  )}
-                  <span>{tech.techName}</span>
-                </Badge>
+                  <Badge
+                    key={index}
+                    className="flex items-center gap-2 px-3 py-2"
+                  >
+                    {tech.icon ? (
+                      <i className={`${tech.icon}`}></i>
+                    ) : (
+                      <Package /> // empty spacer for no icons
+                    )}
+                    <span>{tech.techName}</span>
+                  </Badge>
+                </a>
               ))}
             </div>
           </div>

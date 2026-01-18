@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import './App.css'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -10,11 +11,13 @@ function App() {
       <Section id="hero">
         <Hero />
       </Section>
+      
       <Section id="projects" title="Projects">
         <Projects />
       </Section>
-      <Section id="resume" title="Resume">
-        <Resume />
+
+      <Section id="contact" title="Get In Touch">
+        <Contact />
       </Section>
     </>
   )
