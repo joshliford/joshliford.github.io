@@ -7,7 +7,7 @@ export default function Footer() {
             href="https://github.com/joshliford"
             target="_blank"
             rel="noopener noreferrer"
-            className="mr-1 hover:text-cyan-500"
+            className="mr-1 hover:text-cyan-500 transition-colors"
           >
             Designed & Built by Josh Liford.
           </a>
@@ -16,7 +16,7 @@ export default function Footer() {
             href="https://code.visualstudio.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 hover:text-cyan-500"
+            className="ml-1 hover:text-cyan-500 transition-colors"
           >
             VS Code
           </a>
@@ -25,7 +25,7 @@ export default function Footer() {
             href="https://react.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 hover:text-cyan-500"
+            className="ml-1 hover:text-cyan-500 transition-colors"
           >
             React
           </a>
@@ -34,7 +34,7 @@ export default function Footer() {
             href="https://tailwindcss.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 hover:text-cyan-500"
+            className="ml-1 hover:text-cyan-500 transition-colors"
           >
             Tailwind CSS
           </a>
@@ -43,7 +43,7 @@ export default function Footer() {
             href="https://ui.shadcn.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 hover:text-cyan-500"
+            className="ml-1 hover:text-cyan-500 transition-colors"
           >
             Shadcn UI
           </a>

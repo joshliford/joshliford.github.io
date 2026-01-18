@@ -4,13 +4,13 @@ export default function NavBar() {
       <nav>
         <ul className="flex flex-row gap-6">
           <li>
-            <a href="#hero">About Me</a>
+            <a href="#hero" className="hover:text-cyan-500 transition-colors">About Me</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" className="hover:text-cyan-500 transition-colors">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="hover:text-cyan-500 transition-colors">Contact</a>
           </li>
         </ul>
       </nav>

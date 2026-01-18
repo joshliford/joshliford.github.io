@@ -38,12 +38,12 @@ export default function Contact() {
               <Mail className="h-8 w-8" />
             </a>
             </div>
-            <div className="flex items-center gap-2 mt-10">
+            <div className="flex items-center gap-2">
               <Download className="h-5 w-5" />
               <a
                 href="/resume.pdf"
                 download="Josh_Liford_Resume.pdf"
-                className="hover:text-cyan-500"
+                className="hover:text-cyan-500 transition-colors"
               >
                 Download My Resume
               </a>

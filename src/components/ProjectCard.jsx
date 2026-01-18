@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "./ui/badge";
-import { ArrowUpRight, Package } from "lucide-react";
+import { ArrowUpRight, Download, Package } from "lucide-react";
 
 export default function ProjectCard({
   projectTitle,
@@ -17,17 +17,27 @@ export default function ProjectCard({
   techStack,
 }) {
   return (
-    <Card className="w-full max-w-2xl hover:border-2">
+    <Card className="w-full max-w-2xl hover:shadow-md">
       <CardHeader className="space-y-6">
-        <a
-          href={projectLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 group cursor-pointer"
-        >
-          <CardTitle className="text-2xl">{projectTitle}</CardTitle>
-          <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </a>
+        <div className="flex flex-row justify-between items-center">
+          <a
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 group cursor-pointer"
+          >
+            <CardTitle className="text-2xl">{projectTitle}</CardTitle>
+            <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
+
+          <a
+            href="/amplify-jamroom.png"
+            download="amplify_jamroom_screenshot.png"
+            className="hover:text-cyan-500 transition-colors text-sm"
+          >
+            View Project Screenshot
+          </a>
+        </div>
         <CardDescription className="text-black text-md">
           {shortDescription}
         </CardDescription>
@@ -37,8 +47,8 @@ export default function ProjectCard({
           <div>
             {fullDescription && <p className="mb-4">{fullDescription}</p>}
             {note && (
-              <p className="mb-12">
-                <em>Note:</em> {note}
+              <p className="mb-12 text-sm">
+                <em>Note: {note}</em>
               </p>
             )}
             <div className="flex flex-wrap gap-2">
