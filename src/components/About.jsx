@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="space-y-4 max-w-3xl">
+    <div className="space-y-4 max-w-3xl px-6 md:px-8 lg:px-12">
       <p className="text-slate-300">
         After years in emergency medicine, I realized I wanted to solve problems
         at a different scale. I transitioned into software development because I

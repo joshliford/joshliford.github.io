@@ -2,7 +2,7 @@ import { Mail, Download } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="w-full max-w-6xl px-4">
+    <div className="w-full max-w-6xl px-6 md:px-8 lg:px-12">
       <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 items-center">
         {/* Left column - Contact info */}
         <div className="flex flex-col items-center md:items-start gap-6">

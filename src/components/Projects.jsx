@@ -3,7 +3,7 @@ import projectInfo from "../../projectInfo";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col justify-center text-left items-center space-y-6">
+    <div className="flex flex-col justify-center text-left items-center space-y-6 px-6 md:px-8 lg:px-12">
       <div>
         {projectInfo.map((proj) => (
           <ProjectCard

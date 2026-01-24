@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="flex justify-center items-center">
-      <footer className="py-6">
+    <div className="flex justify-center text-center items-center py-6 px-6 md:px-8">
+      <footer>
         <p className="text-slate-400">
           <a
             href="https://github.com/joshliford"
