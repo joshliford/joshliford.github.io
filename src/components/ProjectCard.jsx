@@ -11,6 +11,7 @@ import { ArrowUpRight, Package } from "lucide-react";
 export default function ProjectCard({
   projectTitle,
   projectLink,
+  projectScreenshot,
   shortDescription,
   fullDescription,
   note,
@@ -23,7 +24,7 @@ export default function ProjectCard({
       rel="noopener noreferrer"
       className="flex justify-center items-center gap-2 group cursor-pointer hover:text-orange-400 transition-colors"
     >
-      <Card className="w-full max-w-2xl bg-slate-700 hover:bg-slate-600">
+      <Card className="w-full max-w-2xl bg-slate-700 hover:bg-slate-600 mb-16">
         <CardHeader className="space-y-6">
           <div className="flex flex-row justify-between items-center text-slate-100">
             <div className="flex items-center gap-2">
@@ -32,14 +33,16 @@ export default function ProjectCard({
               </CardTitle>
               <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-orange-400" />
             </div>
-            <a
-              href="/amplify-jamroom.png"
-              download="amplify_jamroom_screenshot.png"
-              className="hover:text-orange-400 transition-colors text-sm font-semibold"
-              onClick={(e) => e.stopPropagation()} // prevents card link from firing
-            >
-              View Project Screenshot
-            </a>
+            {projectScreenshot &&
+              <a
+                href="/amplify-jamroom.png"
+                download="amplify_jamroom_screenshot.png"
+                className="hover:text-slate-400 transition-colors text-sm font-semibold"
+                onClick={(e) => e.stopPropagation()} // prevents card link from firing
+              >
+                View Project Screenshot
+              </a>
+            }
           </div>
         </CardHeader>
         <CardDescription className="text-slate-300 text-md p-6">

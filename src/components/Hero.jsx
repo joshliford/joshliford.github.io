@@ -9,7 +9,7 @@ export default function Hero() {
       transition={{ duration: 2, ease: "easeOut" }}
     >
     <div className="flex flex-col justify-center px-6 md:px-8 lg:px-12">
-      <div className="flex flex-col text-left space-y-2 mb-6">
+      <div className="flex flex-col text-left space-y-2 mb-6 p-6">
         <h1 className="text-5xl text-slate-100">Josh Liford</h1>
         <h2 className="text-2xl text-slate-100">Jr. Full Stack Developer</h2>
         <p className="text-slate-300">

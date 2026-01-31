@@ -10,6 +10,7 @@ export default function Projects() {
             key={proj.id}
             projectTitle={proj.projectTitle}
             projectLink={proj.projectLink}
+            projectScreenshot={proj.projectScreenshot}
             shortDescription={proj.shortDescription}
             fullDescription={proj.fullDescription}
             note={proj.note}
