@@ -24,7 +24,7 @@ export default function ProjectCard({
       rel="noopener noreferrer"
       className="flex justify-center items-center gap-2 group cursor-pointer hover:text-orange-400 transition-colors"
     >
-      <Card className="w-full max-w-2xl bg-slate-700 hover:bg-slate-600 mb-16">
+      <Card className="w-full max-w-2xl border border-slate-700 bg-slate-700 hover:bg-slate-600 mb-16 transition-all hover:-translate-y-1 hover:border hover:border-orange-400">
         <CardHeader className="space-y-6">
           <div className="flex flex-row justify-between items-center text-slate-100">
             <div className="flex items-center gap-2">

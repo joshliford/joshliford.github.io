@@ -41,7 +41,7 @@ export default function Contact() {
             <div className="flex items-center gap-2 hover:text-orange-400 transition-colors">
               <Download className="h-5 w-5" />
               <a
-                href="/resume.pdf"
+                href="/resume-v2.pdf"
                 download="Josh_Liford_Resume.pdf"
               >
                 Download My Resume
@@ -54,7 +54,7 @@ export default function Contact() {
         <div className="space-y-4 w-full max-w-2xl">
           <div className="w-full h-100 rounded">
             <iframe
-              src="/resume.pdf"
+              src="/resume-v2.pdf"
               title="Preview Resume"
               className="w-full h-full rounded"
             />
